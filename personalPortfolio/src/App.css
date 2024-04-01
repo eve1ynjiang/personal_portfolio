@@ -1,0 +1,26 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.image-container {
+  display: inline-block;
+  margin: 15px;
+  width: 225px;
+  height: auto;
+}
+
+.image-container img {
+  width: 100%; 
+  height: auto; 
+}
+
+.description-input {
+  border: none; 
+  font-size: 1.3em; 
+  text-align: center; 
+  width: 100%; 
+  margin: 7px;
+}
