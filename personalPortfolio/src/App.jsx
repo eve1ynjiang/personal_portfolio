@@ -43,18 +43,29 @@ function Homepage() {
     },
   ];
 
+  const [dark, setDark] = useState(false)
+
+  function handleClick() {
+    setDark(!dark)
+  }
+
   return (
-    <div>
-      <Name />
-      {images.map((image, index) => (
-        <Image
-          key={index}
-          src={image.src}
-          alt={image.alt}
-          description={image.description}
-          link={image.link}
-        />
-      ))}
+    <div className="page-container">
+      <div className={dark ? 'content-container dark-mode' : 'content-container'}>
+        <Name />
+        {images.map((image, index) => (
+          <Image
+            key={index}
+            src={image.src}
+            alt={image.alt}
+            description={image.description}
+            link={image.link}
+          />
+        ))}
+      </div>
+      <button onClick={handleClick}>
+        {dark ? 'Light Mode' : 'Dark Mode'}
+      </button>
     </div>
   );
 }

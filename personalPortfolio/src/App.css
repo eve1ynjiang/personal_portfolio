@@ -24,3 +24,23 @@
   width: 100%; 
   margin: 7px;
 }
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .description-input {
+  filter: invert(1);
+}
